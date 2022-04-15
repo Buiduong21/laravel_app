@@ -13,4 +13,7 @@ class HomeController extends Controller
         $cats = Category::all();
         return view('home', compact('cats'));
     }
+     public function about(){
+        return view('about');
+    }
 }
